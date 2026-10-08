@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
+@export var health : int
 
 const SPEED = 150.0
-const JUMP_VELOCITY = -250.0
+const JUMP_VELOCITY = -300.0
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 

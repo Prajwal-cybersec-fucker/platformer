@@ -200,21 +200,24 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jjgbg"]
-radius = 8.006942
+radius = 9.055386
 
 [node name="Player" type="CharacterBody2D" unique_id=944366652]
+collision_layer = 2
 script = ExtResource("1_v0iea")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=837631879]
 sprite_frames = SubResource("SpriteFrames_0p7yc")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame = 1
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2001313846]
-position = Vector2(0.33333334, 8.333334)
+z_index = 5
+position = Vector2(1, 6)
 shape = SubResource("CircleShape2D_jjgbg")
+one_way_collision = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1656973720]
 zoom = Vector2(4, 4)
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true

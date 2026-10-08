@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://srmn73pvqxi"]
+
+[ext_resource type="Texture2D" uid="uid://cx4q5876upxp0" path="res://Assets/Free/Traps/Platforms/Brown Off.png" id="1_mi635"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0p7yc"]
+size = Vector2(12, 4)
+
+[node name="Platform" type="AnimatableBody2D" unique_id=751103987]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=362676399]
+texture = ExtResource("1_mi635")
+region_enabled = true
+region_rect = Rect2(0, 1.9583769, 12.537704, 4.839834)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1434838243]
+shape = SubResource("RectangleShape2D_0p7yc")
